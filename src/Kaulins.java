@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Kaulins {
 
 	static int mestKaulinu(int reizes) {
-		int skaitlis;
+		int skaitlis = 0;
 		Random rand = new Random();
 		for(int i=0; i<reizes; i++) { 
 			skaitlis = rand.nextInt(6)+1;
@@ -15,7 +15,7 @@ public class Kaulins {
 	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int reizes, izvele, pedejais;
+		int reizes, izvele, pedejais = 0;
 		do {
 			System.out.println("1 - Mest kauliņu | 2 - Apskatīt pēdējo | 3 - Apturēt");
 			izvele = scan.nextInt();
